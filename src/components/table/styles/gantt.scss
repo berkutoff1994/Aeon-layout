@@ -1,0 +1,63 @@
+.gantt-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1440px;
+  outline: none;
+  padding: 50px;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+  background: #F5F5F5;
+  border-radius: 50px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+
+    h1 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .exportButton {
+      min-width: 100px;
+      height: 40px;
+      margin: 0;
+      background: #FFFFFF;
+      border: 1px solid rgba(38, 40, 66, 0.12);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  .gantt-content-wrapper {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .gantt-content-wrapper::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+  }
+  .gantt-content-wrapper::-webkit-scrollbar{
+    width: 5px;
+    background-color: #F5F5F5;
+  }
+  .gantt-content-wrapper::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #fff;
+  }
+  .gantt-content-wrapper::after {
+    position: absolute;
+    content: '';
+    right: calc(3% - 5px);
+    background: none;
+    height: 60%;
+    width: 10px;
+    box-shadow: -4px 2px 8px rgb(16 31 43 / 10%);
+  }
+}

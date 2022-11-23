@@ -1,0 +1,78 @@
+.tbody {
+  background: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  .displayNone {
+    display: none;
+  }
+  tr{ 
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    th {
+      margin: 0;
+      padding: 0;
+      border: 1px solid rgba(38, 40, 66, 0.12);
+    }
+    td {
+      border-right: 1px solid rgba(38, 40, 66, 0.12);
+      padding: 0;
+    }
+  }
+  .headcol {
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 10px 0;
+    padding-left: 10px;
+    border: 1px solid rgba(38, 40, 66, 0.12);
+
+    .headcol-block {
+      display: flex;
+
+      div:not(:last-child) {
+        margin-right: 7px;
+      }
+      .child-count {
+        color: #8B8C9E;
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .arrow-icon {
+        cursor: pointer;
+      }
+      .arrow-icon__active svg {
+        transform: rotate(180deg)
+      }
+    }
+  }
+  .progress-td {
+    position: relative;
+
+    .progress-block {
+      position: absolute;
+      left: 0;
+      top: 20%;
+      display: flex;
+
+      .progress-line {
+        width: 20px;
+        height: 24px;
+        margin: 0;
+        margin-right: 8px;
+        background: #E2EBFF;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+      }
+      .progress-title {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        white-space: nowrap;
+      }
+    }
+  }
+}
