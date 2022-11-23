@@ -21,3 +21,5 @@ export function MyGantt ({data}: {data: any}) {
     </div>
   )
 }
+
+
