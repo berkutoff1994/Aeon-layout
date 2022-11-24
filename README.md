@@ -11,4 +11,4 @@
 
 * Откройте в браузере в live режиме
 
-Для тестирования работы сайта в браузере перейдите по ссылке: <a href='https://aeon-layout.webtm.ru'>aeon-layout.webtm.ru<a>
+Для тестирования работы сайта в браузере перейдите по ссылке: <a href='http://aeon-layout.webtm.ru'>aeon-layout.webtm.ru<a>
